@@ -12,10 +12,10 @@ const app = express()
 app.use(cors())
 app.use(express.json({ limit: '50mg' }))
 
-app.use('/api/v1/dalle', router)
+app.use('/dalle', router)
 
 app.get('/', (req, res) => {
-  res.status(200).json({ msg: 'Hello?' })
+  res.status(200).json({ msg: 'Hello Main Route?' })
 })
 
 app.listen(port, () => {
