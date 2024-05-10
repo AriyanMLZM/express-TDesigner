@@ -15,7 +15,7 @@ app.use(express.json({ limit: '50mg' }))
 app.use('/dalle', router)
 
 app.get('/', (req, res) => {
-  res.status(200).json({ msg: 'Hello Main Route?' })
+  res.status(200).json({ msg: 'Hello, Main Route?' })
 })
 
 app.listen(port, () => {
